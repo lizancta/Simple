@@ -6,10 +6,14 @@ body,ul,li {
 
 body {
 	background: #FFFFFF;
-	font-size:12px;
+	font-size:14px;
 	-webkit-user-select:none;
 	-webkit-text-size-adjust:none;
 	font-family:helvetica;
+}
+a {
+	text-decoration: none;
+	color: #999;
 }
 
 #header {
@@ -18,12 +22,22 @@ body {
 	width:100%;
 	height:45px;
 	line-height:45px;
-	background-color:#FFFFFF;
+	background-color:#f6f6f6;
 	padding:0;
-	color:#999;
+	color:#77AF28;
 	font-size:20px;
-	text-align:center;
+	text-align: center;
 	border-bottom: 1px solid #999;
+}
+
+#header span{
+	display: inline-block;
+	height: 100%;
+	width: 20%;
+	text-align: center;
+}
+#header span.title{
+	width: 55%;
 }
 
 #header a {
@@ -38,13 +52,11 @@ body {
 	bottom:0; left:0;
 	width:100%;
 	height:48px;
-	background-color:#222;
-	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
-	background-image:-moz-linear-gradient(top, #999, #666 2%, #222);
-	background-image:-o-linear-gradient(top, #999, #666 2%, #222);
+	background-color:#77AF28;
 	padding:0;
 	padding-top: 1em;
 	border-top:1px solid #444;
+	text-align: center;
 }
 
 #wrapper {
@@ -101,6 +113,9 @@ body {
 
 /* Propios */
 
+.container {
+	text-align: center;
+}
 .barra {
 	background: #999;
 	width: 100%;
@@ -109,40 +124,51 @@ body {
 }
 .footerIcon{
 	display: inline-block;
-	width: 24%;
+	width: 18%;
 	vertical-align: central;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.7em;
 	color: white;
 }
+.footerIcon span{
+	display: block;
+}
+.footerIconTxt{
+	font-size: .5em;
+}
 .homeButton{
-	width:49%;
+	width:48%;
 	display: inline-block;
 	border: 1px solid #FFFFFF;
 	overflow: hidden;
 	height: 10em;
-	position: relative;
+	text-align: center;
+	margin: 0;
 }
-.homeButton:first-child{
+.container .homeButton:first-child{
 	width: 100%;
 }
-.homeButtonTxt{
-	position: absolute;
-	-webkit-backface-visibility: hidden;
-	bottom: 1em;
-	left: 1em;
-	color: #FFFFFF;
-	font-size: 1em;
+.homeButton .icon{
+	font-size: 3em;
+	color: #fff;
+	margin-top: .5em;
 }
-.homeButtonTxtFirst{
-	font-size: 1.5em;
-	bottom: 3em;
-}
-.homeButton:first-child p{
-	position: absolute;
-	-webkit-backface-visibility: hidden;
-	font-size: 1em;
-	bottom: .5em;
-	left: 1em;
+.homeButton p{
+	/*-webkit-backface-visibility: hidden;*/
 	color: #FFFFFF;
+}
+.container .homeButton:first-child p{
+	/*-webkit-backface-visibility: hidden;*/
+	font-size: 1em;
+	color: #FFFFFF;
+}
+.img{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	/*background-image: url(../img/imagen1.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }

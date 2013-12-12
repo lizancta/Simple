@@ -35,3 +35,18 @@ document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2
  * * * * * * * */
 
  window.mySwipe = Swipe(document.getElementById('slider'));
+
+Zepto(function($){
+	inicializar();
+ });
+ function inicializar(){
+ 	$(".back1").css("background-image","url('img/imagen1.jpg')");
+ 	$(".back2").css("background-image","url('img/imagen2.jpg')");
+ 	$(".back3").css("background-image","url('img/imagen3.jpg')");
+ 	$(".back4").css("background-image","url('img/imagen4.jpg')");
+ 	$(".back5").css("background-image","url('img/imagen5.jpg')");
+
+ 	$( ".back1").on( "click", function() {
+ 		window.location = "list.html";
+});
+ }
