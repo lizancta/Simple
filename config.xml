@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns 		= "http://www.w3.org/ns/widgets"
+        	xmlns:gap 	= "http://phonegap.com/ns/1.0"
+        	id        	= "com.diproach.prueba"
+        	versionCode	= "5" 
+        	version   	= "0.00.01">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Prueba Simple</name>
+
+    <description>
+        Aplicacion mobile prueba Simple
+    </description>
+
+    <author href="http://diproach.com" email="info@diproach.com">
+        Diproach 
+    </author>
+    
+	
+	
+    <preference name="fullscreen" value="true" />
+    
+    <feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+
+	<access origin="*"/>
+	
+	
+	<gap:plugin name="com.phonegap.plugins.childbrowser" />
+
+	<!-- <gap:splash src="splash/ios/Default-Landscape.png" width="1024" height="768" />
+	<gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
+	<gap:splash src="splash/ios/Default-Landscape_at_2x.png" width="2048" height="1496" />
+	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" width="1536" height="2008" />
+
+	<icon src="icon.png" />
+	<icon src="icon.57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icon.72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icon.114.png" gap:platform="ios" width="114" height="114" />
+	<icon src="icons/ios/classic.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ios/ipad.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/retina_ipad.png" gap:platform="ios" width="144" height="144" /> -->
+</widget>
