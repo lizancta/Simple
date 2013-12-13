@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2
 
  window.mySwipe = Swipe(document.getElementById('slider'));
 
-Zepto(function($){
+$(document).ready(function(){
 	inicializar();
  });
  function inicializar(){

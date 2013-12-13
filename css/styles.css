@@ -15,6 +15,9 @@ a {
 	text-decoration: none;
 	color: #999;
 }
+p{
+
+}
 
 #header {
 	position:absolute; z-index:2;
@@ -145,8 +148,8 @@ a {
 	text-align: center;
 	margin: 0;
 }
-.container .homeButton:first-child{
-	width: 100%;
+.container .homeButton:first-child, .container .homeButton:last-child{
+	width: 98%;
 }
 .homeButton .icon{
 	font-size: 3em;
@@ -161,6 +164,7 @@ a {
 	/*-webkit-backface-visibility: hidden;*/
 	font-size: 1em;
 	color: #FFFFFF;
+	width: 90%;
 }
 .img{
 	padding: 0;
@@ -171,4 +175,44 @@ a {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+.featured{
+	background-color: #f6f6f6!important;
+}
+.barContainer {
+	width: 100%;
+	background: #f3f3f3;
+	height: 4em;
+	padding-left: 1em;
+	padding-top: .5em;
+	text-align: left;
+	color: #555;
+}
+.barText{
+	display: inline-block;
+	width: 69%;
+}
+.barButton{
+	display: inline-block;
+	width: 29%;
+	font-size: 2.5em;
+	height: 100%;
+	vertical-align: top;
+	text-align: center;
+}
+.barButton a{
+	margin-right: .4em;
+}
+.barTitle{
+	display: block;
+	font-size: 1.3em;
+}
+.barAdress, .barTel{
+	display: block;
+}
+.itemDescription p{
+	text-align: left;
+	padding: 1em;
+	padding-top: .2em;
+	padding-bottom: .2em;
 }
